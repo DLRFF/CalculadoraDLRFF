@@ -1,0 +1,69 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="80dp"
+    android:viewportWidth="320"
+    android:viewportHeight="80">
+
+    <!-- Fondo de tarjeta redondeada -->
+    <path
+        android:fillColor="#F3EDF7"
+        android:pathData="M8,4h304c4.4,0 8,3.6 8,8v56c0,4.4 -3.6,8 -8,8H8c-4.4,0 -8,-3.6 -8,-8V12c0,-4.4 3.6,-8 8,-8z" />
+    <path
+        android:strokeColor="#6750A4"
+        android:strokeWidth="1.5"
+        android:pathData="M8,4h304c4.4,0 8,3.6 8,8v56c0,4.4 -3.6,8 -8,8H8c-4.4,0 -8,-3.6 -8,-8V12c0,-4.4 3.6,-8 8,-8z" />
+
+    <!-- Gráfico financiero a la izquierda: monedas y flecha de crecimiento -->
+    <!-- Moneda 1 -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:fillColor="#EADDFF" android:pathData="M30,52m-10,0a10,4 0,1 1,20 0a10,4 0,1 1,-20 0"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M20,52v4c0,2.2 4.5,4 10,4s10,-1.8 10,-4v-4"/>
+    <!-- Moneda 2 -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:fillColor="#EADDFF" android:pathData="M30,44m-10,0a10,4 0,1 1,20 0a10,4 0,1 1,-20 0"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M20,44v4c0,2.2 4.5,4 10,4s10,-1.8 10,-4v-4"/>
+    <!-- Flecha de crecimiento verde exponencial -->
+    <path android:strokeColor="#388E3C" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M48,54Q58,48 68,30L68,36M68,30L62,30"/>
+
+    <!-- Fórmula central: A = P(1 + r/n)^(nt) -->
+    <!-- A = -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2.5" android:pathData="M88,48L96,28L104,48M91,42h10"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M110,36h10M110,41h10"/>
+
+    <!-- P -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2.5" android:pathData="M128,28v20M128,28h8c3,0 6,2 6,5s-3,5 -6,5h-8"/>
+
+    <!-- Paréntesis abierto ( -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M148,26c-3,4 -4,12 0,24"/>
+
+    <!-- 1 + -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M154,34L157,31v17M153,48h8"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M166,39h8M170,35v8"/>
+
+    <!-- Fracción r / n -->
+    <!-- r -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.8" android:pathData="M180,31v8M180,33c1,-2 3,-2 4,-1"/>
+    <!-- Línea de división -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.8" android:pathData="M178,39h10"/>
+    <!-- n -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.8" android:pathData="M180,42v7M180,44c1,-2 3,-2 4,-1v6"/>
+
+    <!-- Paréntesis cerrado ) -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M194,26c3,4 4,12 0,24"/>
+
+    <!-- Exponente: n·t -->
+    <!-- n -->
+    <path android:strokeColor="#B3261E" android:strokeWidth="1.6" android:pathData="M200,24v6M200,25c1,-1 2,-1 3,0v5"/>
+    <!-- punto de multiplicación · -->
+    <path android:fillColor="#B3261E" android:pathData="M206,27m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    <!-- t -->
+    <path android:strokeColor="#B3261E" android:strokeWidth="1.6" android:pathData="M211,22v8c0,1 1,1 2,1M209,24h4"/>
+
+    <!-- Ecuación secundaria abajo: Interés = A - P -->
+    <path
+        android:fillColor="#EADDFF"
+        android:pathData="M228,30h80c2.2,0 4,1.8 4,4v18c0,2.2 -1.8,4 -4,4h-80c-2.2,0 -4,-1.8 -4,-4V34c0,-2.2 1.8,-4 4,-4z" />
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.8" android:pathData="M236,36v10M233,36h6M233,46h6"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M245,39h6M245,43h6"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.8" android:pathData="M256,46L262,35L268,46M258,43h8"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M272,41h6"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.8" android:pathData="M284,36v10M284,36h5c2,0 3,1 3,3s-1,3 -3,3h-5"/>
+</vector>

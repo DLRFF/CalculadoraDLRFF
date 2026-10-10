@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">CalculadoraDLRFF</string>
+    <string name="elige_calculo">Select a calculation</string>
+    <string name="calc_cuadratica">Quadratic equation</string>
+    <string name="calc_led">LED resistor</string>
+    <string name="calc_bici">Bike gear &amp; speed</string>
+    <string name="calc_interes">Compound interest</string>
+    <string name="cd_formula">Formula image for the selected calculation</string>
+    <string name="btn_calcular">Calculate</string>
+    <string name="resultado_titulo">Result</string>
+
+    <!-- Calculation 1: Quadratic -->
+    <string name="etiqueta_cuad_a">Coefficient a</string>
+    <string name="ayuda_cuad_a">Non-zero</string>
+    <string name="etiqueta_cuad_b">Coefficient b</string>
+    <string name="ayuda_cuad_b">Any real number</string>
+    <string name="etiqueta_cuad_c">Coefficient c</string>
+    <string name="ayuda_cuad_c">Any real number</string>
+
+    <!-- Calculation 2: LED Resistor -->
+    <string name="etiqueta_led_vf">Supply voltage (Vf)</string>
+    <string name="unidad_led_vf">V</string>
+    <string name="ayuda_led_vf">E.g. 5 or 12 (max 48)</string>
+    <string name="etiqueta_led_vled">LED voltage (Vled)</string>
+    <string name="unidad_led_vled">V</string>
+    <string name="ayuda_led_vled">Red ≈ 2, blue ≈ 3</string>
+    <string name="etiqueta_led_i">Current (I)</string>
+    <string name="unidad_led_i">mA</string>
+    <string name="ayuda_led_i">Typical: 20 (from 1 to 50)</string>
+
+    <!-- Calculation 3: Bike Gear -->
+    <string name="etiqueta_bici_plato">Chainring teeth</string>
+    <string name="unidad_bici_plato">teeth</string>
+    <string name="ayuda_bici_plato">E.g. 50 (range: 22 to 60)</string>
+    <string name="etiqueta_bici_pinon">Cog teeth</string>
+    <string name="unidad_bici_pinon">teeth</string>
+    <string name="ayuda_bici_pinon">E.g. 17 (range: 9 to 36)</string>
+    <string name="etiqueta_bici_circ">Wheel circumference</string>
+    <string name="unidad_bici_circ">mm</string>
+    <string name="ayuda_bici_circ">Road 700x25c ≈ 2105</string>
+    <string name="etiqueta_bici_cadencia">Pedaling cadence</string>
+    <string name="unidad_bici_cadencia">rpm</string>
+    <string name="ayuda_bici_cadencia">E.g. 90 (range: 10 to 150)</string>
+
+    <!-- Calculation 4: Compound Interest -->
+    <string name="etiqueta_int_capital">Principal amount (P)</string>
+    <string name="unidad_int_capital">$</string>
+    <string name="ayuda_int_capital">Initial investment</string>
+    <string name="etiqueta_int_tasa">Annual interest rate (r)</string>
+    <string name="unidad_int_tasa">%</string>
+    <string name="ayuda_int_tasa">E.g. 10 for 10%</string>
+    <string name="etiqueta_int_n">Compounds per year (n)</string>
+    <string name="unidad_int_n">times/yr</string>
+    <string name="ayuda_int_n">12: monthly, 1: yearly</string>
+    <string name="etiqueta_int_tiempo">Time (t)</string>
+    <string name="unidad_int_tiempo">years</string>
+    <string name="ayuda_int_tiempo">Years invested</string>
+
+    <!-- Validation messages -->
+    <string name="err_campo_obligatorio">This field is required</string>
+    <string name="err_numero_invalido">Enter a valid number</string>
+    <string name="err_cuad_a_cero">Coefficient \'a\' cannot be zero</string>
+    <string name="err_cuad_discriminante">Equation has no real roots (b² - 4ac &lt; 0)</string>
+    <string name="err_led_vf_rango">Voltage must be greater than 0 and max 48 V</string>
+    <string name="err_led_vled_rango">LED voltage must be between 1.0 and 4.0 V</string>
+    <string name="err_led_i_rango">Current must be between 1 and 50 mA</string>
+    <string name="err_led_vf_menor">Vf must be greater than LED voltage (Vled)</string>
+    <string name="err_bici_plato_rango">Must be between 22 and 60 teeth</string>
+    <string name="err_bici_pinon_rango">Must be between 9 and 36 teeth</string>
+    <string name="err_bici_circ_rango">Must be between 1000 and 2400 mm</string>
+    <string name="err_bici_cadencia_rango">Must be between 10 and 150 rpm</string>
+    <string name="err_int_capital_rango">Principal must be greater than 0</string>
+    <string name="err_int_tasa_rango">Rate must be between 0.1% and 100%</string>
+    <string name="err_int_n_rango">Must be an integer between 1 and 365</string>
+    <string name="err_int_tiempo_rango">Time must be greater than 0 and max 100 years</string>
+
+    <!-- Result templates -->
+    <string name="res_cuad_dos_raices">x₁ = %1$.4f\nx₂ = %2$.4f</string>
+    <string name="res_cuad_raiz_doble">Double root:\nx = %1$.4f</string>
+    <string name="res_led">Calculated resistance: %1$.1f Ω\nCommercial E12: %2$s\nPower: %3$.1f mW (1/4 W resistor)</string>
+    <string name="res_bici">Gear ratio: %1$.2f\nDevelopment: %2$.2f m/pedal stroke\nEstimated speed: %3$.1f km/h</string>
+    <string name="res_interes">Accumulated balance: %1$s\nTotal interest earned: %2$s</string>
+</resources>

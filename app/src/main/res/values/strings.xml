@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">CalculadoraDLRFF</string>
+    <string name="elige_calculo">Elige un cálculo</string>
+    <string name="calc_cuadratica">Ecuación cuadrática</string>
+    <string name="calc_led">Resistencia LED</string>
+    <string name="calc_bici">Desarrollo en bici</string>
+    <string name="calc_interes">Interés compuesto</string>
+    <string name="cd_formula">Imagen de la fórmula del cálculo seleccionado</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="resultado_titulo">Resultado</string>
+
+    <!-- Cálculo 1: Cuadrática -->
+    <string name="etiqueta_cuad_a">Coeficiente a</string>
+    <string name="ayuda_cuad_a">Distinto de 0</string>
+    <string name="etiqueta_cuad_b">Coeficiente b</string>
+    <string name="ayuda_cuad_b">Cualquier número real</string>
+    <string name="etiqueta_cuad_c">Coeficiente c</string>
+    <string name="ayuda_cuad_c">Cualquier número real</string>
+
+    <!-- Cálculo 2: Resistencia LED -->
+    <string name="etiqueta_led_vf">Voltaje de la fuente (Vf)</string>
+    <string name="unidad_led_vf">V</string>
+    <string name="ayuda_led_vf">Ej. 5 o 12 (máx. 48)</string>
+    <string name="etiqueta_led_vled">Voltaje del LED (Vled)</string>
+    <string name="unidad_led_vled">V</string>
+    <string name="ayuda_led_vled">Rojo ≈ 2, azul ≈ 3</string>
+    <string name="etiqueta_led_i">Corriente (I)</string>
+    <string name="unidad_led_i">mA</string>
+    <string name="ayuda_led_i">Típico: 20 (de 1 a 50)</string>
+
+    <!-- Cálculo 3: Desarrollo en Bici -->
+    <string name="etiqueta_bici_plato">Dientes del plato</string>
+    <string name="unidad_bici_plato">dientes</string>
+    <string name="ayuda_bici_plato">Ej. 50 (rango: 22 a 60)</string>
+    <string name="etiqueta_bici_pinon">Dientes del piñón</string>
+    <string name="unidad_bici_pinon">dientes</string>
+    <string name="ayuda_bici_pinon">Ej. 17 (rango: 9 a 36)</string>
+    <string name="etiqueta_bici_circ">Circunferencia rueda</string>
+    <string name="unidad_bici_circ">mm</string>
+    <string name="ayuda_bici_circ">Ruta 700x25c ≈ 2105</string>
+    <string name="etiqueta_bici_cadencia">Cadencia de pedaleo</string>
+    <string name="unidad_bici_cadencia">rpm</string>
+    <string name="ayuda_bici_cadencia">Ej. 90 (rango: 10 a 150)</string>
+
+    <!-- Cálculo 4: Interés Compuesto -->
+    <string name="etiqueta_int_capital">Capital inicial (P)</string>
+    <string name="unidad_int_capital">$</string>
+    <string name="ayuda_int_capital">Monto a invertir</string>
+    <string name="etiqueta_int_tasa">Tasa de interés anual (r)</string>
+    <string name="unidad_int_tasa">%</string>
+    <string name="ayuda_int_tasa">Ej. 10 para 10%</string>
+    <string name="etiqueta_int_n">Capitalizaciones por año (n)</string>
+    <string name="unidad_int_n">veces/año</string>
+    <string name="ayuda_int_n">12: mensual, 1: anual</string>
+    <string name="etiqueta_int_tiempo">Tiempo (t)</string>
+    <string name="unidad_int_tiempo">años</string>
+    <string name="ayuda_int_tiempo">Años de inversión</string>
+
+    <!-- Mensajes de Validación -->
+    <string name="err_campo_obligatorio">Este campo es obligatorio</string>
+    <string name="err_numero_invalido">Ingresa un número válido</string>
+    <string name="err_cuad_a_cero">El coeficiente \'a\' no puede ser cero</string>
+    <string name="err_cuad_discriminante">La ecuación no tiene raíces reales (b² - 4ac &lt; 0)</string>
+    <string name="err_led_vf_rango">El voltaje debe ser mayor a 0 y máx. 48 V</string>
+    <string name="err_led_vled_rango">El voltaje del LED debe estar entre 1.0 y 4.0 V</string>
+    <string name="err_led_i_rango">La corriente debe estar entre 1 y 50 mA</string>
+    <string name="err_led_vf_menor">Vf debe ser mayor que el voltaje del LED (Vled)</string>
+    <string name="err_bici_plato_rango">Debe ser entre 22 y 60 dientes</string>
+    <string name="err_bici_pinon_rango">Debe ser entre 9 y 36 dientes</string>
+    <string name="err_bici_circ_rango">Debe estar entre 1000 y 2400 mm</string>
+    <string name="err_bici_cadencia_rango">Debe estar entre 10 y 150 rpm</string>
+    <string name="err_int_capital_rango">El capital debe ser mayor a 0</string>
+    <string name="err_int_tasa_rango">La tasa debe estar entre 0.1% y 100%</string>
+    <string name="err_int_n_rango">Debe ser un entero entre 1 y 365</string>
+    <string name="err_int_tiempo_rango">El tiempo debe ser mayor a 0 y máx. 100 años</string>
+
+    <!-- Plantillas para Resultados -->
+    <string name="res_cuad_dos_raices">x₁ = %1$.4f\nx₂ = %2$.4f</string>
+    <string name="res_cuad_raiz_doble">Raíz doble:\nx = %1$.4f</string>
+    <string name="res_led">Resistencia calculada: %1$.1f Ω\nValor comercial E12: %2$s\nPotencia: %3$.1f mW (resistencia de 1/4 W)</string>
+    <string name="res_bici">Relación de transmisión: %1$.2f\nDesarrollo: %2$.2f m/pedalada\nVelocidad estimada: %3$.1f km/h</string>
+    <string name="res_interes">Monto final acumulado: %1$s\nInterés total ganado: %2$s</string>
+</resources>

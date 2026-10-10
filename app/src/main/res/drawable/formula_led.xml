@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="80dp"
+    android:viewportWidth="320"
+    android:viewportHeight="80">
+
+    <!-- Fondo de tarjeta redondeada -->
+    <path
+        android:fillColor="#F3EDF7"
+        android:pathData="M8,4h304c4.4,0 8,3.6 8,8v56c0,4.4 -3.6,8 -8,8H8c-4.4,0 -8,-3.6 -8,-8V12c0,-4.4 3.6,-8 8,-8z" />
+    <path
+        android:strokeColor="#6750A4"
+        android:strokeWidth="1.5"
+        android:pathData="M8,4h304c4.4,0 8,3.6 8,8v56c0,4.4 -3.6,8 -8,8H8c-4.4,0 -8,-3.6 -8,-8V12c0,-4.4 3.6,-8 8,-8z" />
+
+    <!-- Diagrama esquemático electrónico simplificado a la izquierda -->
+    <!-- Fuente Vf -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="2" android:pathData="M25,40h10M35,32v16M40,35v10M40,40h10"/>
+    <!-- Resistencia R (zigzag) -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="2" android:strokeLineJoin="round" android:pathData="M50,40L53,35L57,45L61,35L65,45L69,35L73,45L76,40h10"/>
+    <!-- LED símbolo diodo con flechitas de luz -->
+    <path android:strokeColor="#B3261E" android:strokeWidth="2" android:fillColor="#B3261E" android:pathData="M86,33L96,40L86,47z"/>
+    <path android:strokeColor="#B3261E" android:strokeWidth="2" android:pathData="M96,33v14M96,40h10"/>
+    <!-- Flechas de luz saliendo del LED -->
+    <path android:strokeColor="#B3261E" android:strokeWidth="1.5" android:pathData="M93,31L99,25M97,32L103,26"/>
+
+    <!-- Fórmula central: R = (Vf - Vled) / I -->
+    <!-- R = -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2.5" android:pathData="M135,32v18M135,32h10c3,0 5,2 5,5s-2,5 -5,5h-10M144,42L150,50"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M158,38h10M158,43h10"/>
+
+    <!-- Numerador: Vf - Vled -->
+    <!-- Vf -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M178,28L183,40L188,28"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.5" android:pathData="M190,34v7M190,35h4M190,38h3"/>
+
+    <!-- Signo menos - -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M200,34h10"/>
+
+    <!-- Vled -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M218,28L223,40L228,28"/>
+    <!-- led subíndice -->
+    <path android:strokeColor="#49454F" android:strokeWidth="1.3" android:pathData="M231,34v7h4M238,36h4c0,-2 -4,-2 -4,2s4,3 4,3M245,34v7M248,37c-1,-1 -3,0 -3,2s2,2 3,2"/>
+
+    <!-- Línea divisoria de la fracción -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2" android:pathData="M175,44h78"/>
+
+    <!-- Denominador: I -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="2.5" android:pathData="M211,50v14M208,50h6M208,64h6"/>
+
+    <!-- Nota a la derecha: E12 Standard -->
+    <path
+        android:fillColor="#6750A4"
+        android:pathData="M265,30h40c2.2,0 4,1.8 4,4v16c0,2.2 -1.8,4 -4,4h-40c-2.2,0 -4,-1.8 -4,-4V34c0,-2.2 1.8,-4 4,-4z" />
+    <!-- Texto E12 estilizado -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1.8" android:pathData="M272,36h8M272,40h6M272,44h8M272,36v8"/>
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1.8" android:pathData="M284,38c0,-2 3,-2 4,-1s-4,4 4,4h-4"/>
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1.8" android:pathData="M293,39L295,36v9"/>
+</vector>

@@ -1,0 +1,56 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="80dp"
+    android:viewportWidth="320"
+    android:viewportHeight="80">
+
+    <!-- Fondo de tarjeta redondeada -->
+    <path
+        android:fillColor="#F3EDF7"
+        android:pathData="M8,4h304c4.4,0 8,3.6 8,8v56c0,4.4 -3.6,8 -8,8H8c-4.4,0 -8,-3.6 -8,-8V12c0,-4.4 3.6,-8 8,-8z" />
+    <path
+        android:strokeColor="#6750A4"
+        android:strokeWidth="1.5"
+        android:pathData="M8,4h304c4.4,0 8,3.6 8,8v56c0,4.4 -3.6,8 -8,8H8c-4.4,0 -8,-3.6 -8,-8V12c0,-4.4 3.6,-8 8,-8z" />
+
+    <!-- Engranajes de bicicleta y cadena a la izquierda -->
+    <!-- Plato grande (círculo dentado) -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="2" android:fillColor="#EADDFF" android:pathData="M40,40m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="2" android:pathData="M40,20v4M40,56v4M20,40h4M56,40h4M26,26l3,3M51,51l3,3M26,54l3,-3M51,29l3,-3"/>
+    <path android:fillColor="#6750A4" android:pathData="M40,40m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+
+    <!-- Piñón pequeño a la derecha -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="2" android:fillColor="#EADDFF" android:pathData="M85,40m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M85,28v3M85,49v3M73,40h3M94,40h3"/>
+    <path android:fillColor="#6750A4" android:pathData="M85,40m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+
+    <!-- Cadena uniendo plato y piñón -->
+    <path android:strokeColor="#49454F" android:strokeWidth="1.5" android:pathData="M40,24L85,31M40,56L85,49"/>
+
+    <!-- Ecuaciones a la derecha -->
+    <!-- Línea 1: Relación = Plato / Piñón -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.6" android:pathData="M115,22v8M115,22h5c2,0 3,1 3,2s-1,2 -3,2h-5M120,26L123,30"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.5" android:pathData="M129,24h6M129,27h6"/>
+    <!-- Plato / Piñón -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M140,20h18M140,20v8M140,24h8M148,20c2,0 3,1 3,2s-1,2 -3,2"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.5" android:pathData="M164,18L158,32"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M168,20h8c2,0 3,1 3,2s-1,2 -3,2h-8v4"/>
+
+    <!-- Línea 2: Desarrollo = Relación × Circunferencia -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.6" android:pathData="M115,44v10M115,44h5c3,0 5,2 5,5s-2,5 -5,5h-5"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.5" android:pathData="M129,47h6M129,50h6"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.6" android:pathData="M140,44v10M140,44h5c2,0 3,1 3,2s-1,2 -3,2h-5M145,48L148,54"/>
+    <path android:strokeColor="#49454F" android:strokeWidth="1.5" android:pathData="M154,47L158,51M158,47L154,51"/>
+    <!-- Circ (C) -->
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.8" android:pathData="M172,46c-2,-2 -5,-1 -5,3s3,5 5,3"/>
+
+    <!-- Línea 3: v = Desarrollo × Cadencia × 0.06 (km/h) -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="2" android:pathData="M190,44L194,54L198,44"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.5" android:pathData="M204,47h6M204,50h6"/>
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.8" android:pathData="M216,44v10M216,44h5c3,0 4,2 4,5s-1,5 -4,5h-5"/>
+    <path android:strokeColor="#49454F" android:strokeWidth="1.5" android:pathData="M228,47L232,51M232,47L228,51"/>
+    <!-- RPM (Cadencia) -->
+    <path android:strokeColor="#6750A4" android:strokeWidth="1.6" android:pathData="M242,46c-2,-2 -4,0 -4,3s2,5 4,3M248,44v10"/>
+    <path android:strokeColor="#49454F" android:strokeWidth="1.5" android:pathData="M256,47L260,51M260,47L256,51"/>
+    <path android:strokeColor="#1D1B20" android:strokeWidth="1.5" android:pathData="M266,45c-2,-1 -3,1 -3,3s1,3 3,2s3,-1 3,-2s-1,-3 -3,-3zM271,53h1M275,45c-1,1 -2,3 -2,4s1,3 2,3s2,-1 2,-3s-1,-4 -2,-4zM283,49c0,-2 2,-3 3,-2s-3,4 3,4h-3"/>
+</vector>
